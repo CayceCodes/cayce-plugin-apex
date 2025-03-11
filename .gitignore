@@ -24,3 +24,5 @@ files.ts
 /src/test-harness.ts
 /test/*
 /src/rules/list.md
+./package.json
+./package-lock.json
