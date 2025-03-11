@@ -1,4 +1,4 @@
-import {
+import { id,
     category,
     context,
     message,
@@ -13,6 +13,7 @@ import Query from 'tree-sitter';
 import TsSfApex from 'tree-sitter-sfapex';
 
 
+@id('ApexSuggestUsingNamedCred')
 @name('ApexSuggestUsingNamedCred')
 @category('security')
 @context('scan')

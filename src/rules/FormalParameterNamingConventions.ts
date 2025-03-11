@@ -1,4 +1,4 @@
-import {
+import { id,
     category,
     context,
     message,
@@ -10,6 +10,7 @@ import {
 
 
 import { NamingRule } from './NamingRule.js';
+@id('FormalParameterNamingConventions')
 @name('FormalParameterNamingConventions')
 @category('codestyle')
 @context('scan')

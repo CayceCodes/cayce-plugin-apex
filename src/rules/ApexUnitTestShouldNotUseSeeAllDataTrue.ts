@@ -1,4 +1,4 @@
-import {    ScanRule,
+import { id,    ScanRule,
     context,
     message,
     name,
@@ -7,6 +7,7 @@ import {    ScanRule,
     suggestion,
     category,
 } from 'cayce-types';
+@id('ApexUnitTestShouldNotUseSeeAllDataTrue')
 @name('ApexUnitTestShouldNotUseSeeAllDataTrue')
 @category('bestpractices')
 @context('scan')

@@ -1,4 +1,4 @@
-import {
+import { id,
     category,
     context,
     message,
@@ -9,6 +9,7 @@ import {
     suggestion
 } from 'cayce-types';
 import Parser from 'tree-sitter';
+@id('TooManyFields')
 @name('TooManyFields')
 @category('design')
 @context('scan')
