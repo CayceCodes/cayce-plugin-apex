@@ -1,4 +1,4 @@
-import {
+import { id,
     category,
     context,
     message,
@@ -8,6 +8,7 @@ import {
     suggestion,
     ScanRule
 } from 'cayce-types';
+@id('NamingRule')
 @name('FormalParameterNamingConventions')
 @category('codestyle')
 @context('scan')

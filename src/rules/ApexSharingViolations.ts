@@ -1,4 +1,4 @@
-import {
+import { id,
 ScanRule,
     context,
     message,
@@ -8,6 +8,7 @@ ScanRule,
     suggestion,
     category,
 } from 'cayce-types';
+@id('ApexSharingViolations')
 @name('ApexSharingViolations')
 @category('security')
 @context('scan')

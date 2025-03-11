@@ -1,4 +1,4 @@
-import {
+import { id,
 ScanRule,
     context,
     message,
@@ -10,6 +10,7 @@ ScanRule,
 } from 'cayce-types';
 import { RuleSeverity} from 'cayce-types';
 import TreeSitter from 'tree-sitter';
+@id('ApexCRUDViolation')
 @name('ApexCRUDViolation')
 @category('security')
 @context('scan')

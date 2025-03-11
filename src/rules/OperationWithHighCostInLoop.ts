@@ -1,4 +1,4 @@
-import {
+import { id,
     category,
     context,
     message,
@@ -11,6 +11,7 @@ import {
 
 
 
+@id('OperationWithHighCostInLoop')
 @name('OperationWithHighCostInLoop')
 @category('performance')
 @context('scan')

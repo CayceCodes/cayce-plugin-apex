@@ -1,4 +1,4 @@
-import {
+import { id,
     category,
     context,
     message,
@@ -8,6 +8,7 @@ import {
     ScanRule,
     suggestion,
 } from 'cayce-types';
+@id('EmptyCatchBlock')
 @name('EmptyCatchBlock')
 @category('errorprone')
 @context('scan')

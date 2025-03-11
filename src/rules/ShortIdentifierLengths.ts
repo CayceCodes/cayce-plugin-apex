@@ -1,6 +1,7 @@
-import { ruleSeverity, category, context, message, name, treeQuery, ScanRule, suggestion } from 'cayce-types';
+import { id, ruleSeverity, category, context, message, name, treeQuery, ScanRule, suggestion } from 'cayce-types';
 
 
+@id('ShortIdentifierLengths')
 @name('Variable, constant or parameter name too short')
 @category('codestyle')
 @context('measure')

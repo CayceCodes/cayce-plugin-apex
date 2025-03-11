@@ -1,6 +1,7 @@
-import { ruleSeverity, category, context, message, name, treeQuery, suggestion , ScanRule} from 'cayce-types';
+import { id, ruleSeverity, category, context, message, name, treeQuery, suggestion , ScanRule} from 'cayce-types';
 
 
+@id('AllIdentifierLengths')
 @name('Variable/Parameter/Constant appropriate in length')
 @category('codestyle')
 @context('measure')
