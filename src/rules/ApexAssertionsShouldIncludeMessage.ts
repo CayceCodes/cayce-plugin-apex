@@ -22,4 +22,4 @@ import ApexScanRule from './ApexScanRule.js';
 @treeQuery(
     '(method_invocation  object: (identifier) @objectname (#match? @objectname "Assert") name: (identifier) @methodname (argument_list) @args)'
 )
-export class ApexAssertionsShouldIncludeMessage extends  ScanRule {}
+export class ApexAssertionsShouldIncludeMessage extends ScanRule {}
