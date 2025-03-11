@@ -1,4 +1,4 @@
-import {
+import { id,
     category,
     context,
     message,
@@ -7,6 +7,7 @@ import {
     treeQuery,ScanRule,
     suggestion
 } from 'cayce-types';
+@id('MethodHeaderComment')
 @name('MethodHeaderComment')
 @category('bestpractices')
 @context('scan')

@@ -1,4 +1,4 @@
-import {
+import { id,
     category,
     context,
     message,
@@ -10,6 +10,7 @@ import {
 } from 'cayce-types';
 
 
+@id('EmptyIfStmt')
 @name('EmptyIfStmt')
 @category('errorprone')
 @context('scan')

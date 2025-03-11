@@ -1,4 +1,4 @@
-import {
+import { id,
     category,
     context,
     message,
@@ -11,6 +11,7 @@ import {
 
 
 
+@id('NcssMethodCount')
 @name('NcssMethodCount')
 @category('design')
 @context('scan')

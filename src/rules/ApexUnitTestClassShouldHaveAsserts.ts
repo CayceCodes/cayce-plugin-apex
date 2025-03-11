@@ -1,5 +1,6 @@
-import { ScanRule, context, message, name, ruleSeverity, treeQuery,  suggestion, category } from 'cayce-types';
+import { id, ScanRule, context, message, name, ruleSeverity, treeQuery,  suggestion, category } from 'cayce-types';
 
+@id('ApexUnitTestClassShouldHaveAsserts')
 @name('ApexUnitTestClassShouldHaveAsserts')
 @category('bestpractices')
 @context('scan')
