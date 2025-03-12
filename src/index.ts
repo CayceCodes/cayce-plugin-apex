@@ -63,6 +63,7 @@ import { UnusedMethod } from './rules/UnusedMethod.js';
 import { WhileLoopsMustUseBraces } from './rules/WhileLoopsMustUseBraces.js';
 import TreeSitter from 'tree-sitter';
 import TsSfApex from 'tree-sitter-sfapex';
+import { AllIdentifierLengths } from './rules/AllIdentifierLengths.js';
 
 export default class ApexPlugin extends CayceBasePlugin implements CaycePlugin {
 
@@ -73,6 +74,7 @@ export default class ApexPlugin extends CayceBasePlugin implements CaycePlugin {
 
     registerRules() {
         return [
+            new AllIdentifierLengths(),
             new ApexAssertionsShouldIncludeMessage(),
             new ApexBadCrypto(),
             new ApexCRUDViolation(),

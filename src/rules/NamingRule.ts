@@ -8,6 +8,8 @@ import { id,
     suggestion,
     ScanRule
 } from 'cayce-types';
+import ApexScanRule from './ApexScanRule.js';
+
 @id('NamingRule')
 @name('FormalParameterNamingConventions')
 @category('codestyle')

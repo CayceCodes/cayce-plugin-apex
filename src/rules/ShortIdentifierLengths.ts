@@ -1,4 +1,6 @@
 import { id, ruleSeverity, category, context, message, name, treeQuery, ScanRule, suggestion } from 'cayce-types';
+import ApexScanRule from './ApexScanRule.js';
+
 
 
 @id('ShortIdentifierLengths')

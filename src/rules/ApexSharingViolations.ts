@@ -8,6 +8,8 @@ ScanRule,
     suggestion,
     category,
 } from 'cayce-types';
+import ApexScanRule from './ApexScanRule.js';
+
 @id('ApexSharingViolations')
 @name('ApexSharingViolations')
 @category('security')

@@ -8,6 +8,8 @@ import { id,
     ScanRule,
     suggestion
 } from 'cayce-types';
+import ApexScanRule from './ApexScanRule.js';
+
 import Parser from 'tree-sitter';
 @id('TooManyFields')
 @name('TooManyFields')

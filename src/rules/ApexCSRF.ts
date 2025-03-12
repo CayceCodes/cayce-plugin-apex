@@ -8,6 +8,8 @@ import { id,
     ScanRule,
     suggestion,
 } from 'cayce-types';
+import ApexScanRule from './ApexScanRule.js';
+
 @id('ApexCSRF')
 @name('ApexCSRF')
 @category('errorprone')
@@ -16,6 +18,6 @@ import { id,
 @message('Avoid making DML operations in Apex class constructor')
 @ruleSeverity(3)
 @treeQuery(
-    '(constructor_body (expression_statement (query_expression) @soql))(constructor_body (expression_statement (dml_expression) @dml))(constructor_body (expression_statement (method_invocation) @method (#match? @method "Database.query|Database.queryWithBinds")))@target'
+    '(constructor_body (expression_statement (dml_expression)@target))'
 )
 export class ApexCSRF extends ScanRule {}

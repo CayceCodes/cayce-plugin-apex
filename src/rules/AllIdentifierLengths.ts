@@ -1,4 +1,6 @@
 import { id, ruleSeverity, category, context, message, name, treeQuery, suggestion , ScanRule} from 'cayce-types';
+import ApexScanRule from './ApexScanRule.js';
+
 
 
 @id('AllIdentifierLengths')
@@ -8,6 +10,6 @@ import { id, ruleSeverity, category, context, message, name, treeQuery, suggesti
 @message('All proper-length identifiers')
 @suggestion('')
 @ruleSeverity(3)
-@treeQuery('(variable_declarator name: (identifier)@var (#match? @var "^.{3,2000}$"))' +
-    '(formal_parameter name: (identifier)@param (#match? @param "^.{3,2000}$"))')
+@treeQuery('(variable_declarator name: (identifier)@var) (#match? @var "^.{3,2000}$")' +
+    '(formal_parameter name: (identifier)@param (#match? @param "^.{3,2000}$"))@target')
 export class AllIdentifierLengths extends ScanRule {}
