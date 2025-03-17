@@ -1,9 +1,8 @@
 import { ScanRule } from 'cayce-types';
 
 import TsSfApex from 'tree-sitter-sfapex';
-import Parser, { Query, QueryCapture, QueryMatch } from 'tree-sitter';
-import ScanRuleProperties from 'cayce-types/dist/scan-rule-properties.js';
-import ScanResultDigest from 'cayce-types';
+import Parser, { Query, QueryCapture } from 'tree-sitter';
+import {ScanResultDigest} from 'cayce-types';
 
 export default class ApexScanRule extends ScanRule{
     TreeSitterLanguage = TsSfApex.apex;

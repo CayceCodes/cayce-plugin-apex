@@ -21,8 +21,8 @@ import ScanResultDigest from 'cayce-types/dist/scan-result-digest.js';
 @ruleSeverity(3)
 @treeQuery('(class_body(field_declaration) @1)')
 export class TooManyFields extends ScanRule {
-    public validate(targetSource: string, parser: Parser): ScanResultDigest[] {
-        const results: ScanResultDigest[] = super.validate(targetSource, parser);
+    public validate(targetSource: string): ScanResultDigest[] {
+        const results: ScanResultDigest[] = super.validate(targetSource);
         if(results.length > 20) {
             return results;
         }

@@ -1,5 +1,5 @@
 import { id, ruleSeverity, category, context, message, name, treeQuery, suggestion} from 'cayce-types';
-import ScanResultDigest from 'cayce-types';
+import {ScanResultDigest} from 'cayce-types';
 import ApexScanRule from './ApexScanRule.js';
 import Parser, { SyntaxNode } from 'tree-sitter';
 import { CountFormalParametersSubRule } from './CountFormalParametersSubRule.js';
