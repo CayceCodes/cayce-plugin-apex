@@ -8,6 +8,8 @@ import { id,
     ScanRule,
     suggestion,
 } from 'cayce-types';
+import ApexScanRule from './ApexScanRule.js';
+
 @id('AvoidGlobalModifier')
 @name('AvoidGlobalModifier')
 @category('bestpractices')

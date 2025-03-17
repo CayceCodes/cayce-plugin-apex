@@ -7,6 +7,8 @@ import { id,    ScanRule,
     suggestion,
     category,
 } from 'cayce-types';
+import ApexScanRule from './ApexScanRule.js';
+
 @id('AvoidDebugStatements')
 @name('AvoidDebugStatements')
 @category('performance')

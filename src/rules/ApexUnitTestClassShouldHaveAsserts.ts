@@ -1,4 +1,6 @@
 import { id, ScanRule, context, message, name, ruleSeverity, treeQuery,  suggestion, category } from 'cayce-types';
+import ApexScanRule from './ApexScanRule.js';
+
 
 @id('ApexUnitTestClassShouldHaveAsserts')
 @name('ApexUnitTestClassShouldHaveAsserts')

@@ -8,7 +8,10 @@ ScanRule,
     suggestion,
     category,
 } from 'cayce-types';
+import ApexScanRule from './ApexScanRule.js';
+
 import { RuleSeverity} from 'cayce-types';
+
 import TreeSitter from 'tree-sitter';
 @id('ApexCRUDViolation')
 @name('ApexCRUDViolation')

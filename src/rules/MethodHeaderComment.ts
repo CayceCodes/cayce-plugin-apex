@@ -7,6 +7,8 @@ import { id,
     treeQuery,ScanRule,
     suggestion
 } from 'cayce-types';
+import ApexScanRule from './ApexScanRule.js';
+
 @id('MethodHeaderComment')
 @name('MethodHeaderComment')
 @category('bestpractices')

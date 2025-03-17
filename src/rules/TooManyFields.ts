@@ -8,7 +8,10 @@ import { id,
     ScanRule,
     suggestion
 } from 'cayce-types';
+import ApexScanRule from './ApexScanRule.js';
+
 import Parser from 'tree-sitter';
+import ScanResultDigest from 'cayce-types/dist/scan-result-digest.js';
 @id('TooManyFields')
 @name('TooManyFields')
 @category('design')
@@ -18,8 +21,8 @@ import Parser from 'tree-sitter';
 @ruleSeverity(3)
 @treeQuery('(class_body(field_declaration) @1)')
 export class TooManyFields extends ScanRule {
-    public validate(targetSource: string, parser: Parser): Parser.SyntaxNode[] {
-        const results: Parser.SyntaxNode[] = super.validate(targetSource, parser);
+    public validate(targetSource: string): ScanResultDigest[] {
+        const results: ScanResultDigest[] = super.validate(targetSource);
         if(results.length > 20) {
             return results;
         }
