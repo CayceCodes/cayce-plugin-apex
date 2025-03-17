@@ -22,4 +22,4 @@ import ApexScanRule from './ApexScanRule.js';
 @treeQuery(
     '(class_declaration (modifiers) @mods (#not-match? @mods "isTest")) (method_declaration(modifiers (annotation) @target (#match? @target "isTest")))'
 )
-export class TestMethodsMustBeInTestClasses extends ScanRule {}
+export class TestMethodsMustBeInTestClasses extends ApexScanRule {}

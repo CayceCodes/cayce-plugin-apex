@@ -18,4 +18,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('(parser_output)@p')
-export class ApexXSSFromURLParam extends ScanRule {}
+export class ApexXSSFromURLParam extends ApexScanRule {}

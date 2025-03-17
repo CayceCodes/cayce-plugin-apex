@@ -18,4 +18,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(1)
 @treeQuery('(class_declaration name:(identifier) @classname (#not-match? @classname "[a-zA-Z0-9]*"))')
-export class ClassNamingConventions extends ScanRule {}
+export class ClassNamingConventions extends ApexScanRule {}

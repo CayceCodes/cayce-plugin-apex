@@ -20,4 +20,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('Wrap your test code in a System.runAd(user) statement with an appropriate user (avoid admin users.)')
 @ruleSeverity(3)
 @treeQuery('(method_declaration(modifiers(annotation(identifier)@d)))')
-export class ApexUnitTestClassShouldHaveRunAs extends ScanRule {}
+export class ApexUnitTestClassShouldHaveRunAs extends ApexScanRule {}

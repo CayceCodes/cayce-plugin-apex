@@ -18,4 +18,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('(modifier(public)@pub)')
-export class ExcessivePublicCount extends ScanRule {}
+export class ExcessivePublicCount extends ApexScanRule {}

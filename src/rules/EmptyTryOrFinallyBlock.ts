@@ -18,4 +18,4 @@ import ApexScanRule from './ApexScanRule.js';
 @message('Avoid empty try or finally blocks')
 @ruleSeverity(3)
 @treeQuery('(try_statement (block)) (finally_clause (block)@target (#not-match? @target "\S"))')
-export class EmptyTryOrFinallyBlock extends ScanRule {}
+export class EmptyTryOrFinallyBlock extends ApexScanRule {}

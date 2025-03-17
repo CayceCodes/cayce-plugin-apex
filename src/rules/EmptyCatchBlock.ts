@@ -18,4 +18,4 @@ import ApexScanRule from './ApexScanRule.js';
 @message('Avoid empty catch blocks')
 @ruleSeverity(3)
 @treeQuery('(catch_clause (block) @catch)')
-export class EmptyCatchBlock extends ScanRule {}
+export class EmptyCatchBlock extends ApexScanRule {}

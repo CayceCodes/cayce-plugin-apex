@@ -18,4 +18,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('(global)@mod')
-export class AvoidGlobalModifier extends ScanRule {}
+export class AvoidGlobalModifier extends ApexScanRule {}

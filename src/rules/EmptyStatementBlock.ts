@@ -20,4 +20,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('(block) @block')
-export class EmptyStatementBlock extends ScanRule {}
+export class EmptyStatementBlock extends ApexScanRule {}

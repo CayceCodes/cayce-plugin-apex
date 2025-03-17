@@ -21,4 +21,4 @@ import TreeSitter from 'tree-sitter';
 @suggestion('SOQL/DML statements that do not specify "USER_MODE" are not secure by default, so unless there is some reasonable justification consider using WITH USER_MODE in your statements.')
 @ruleSeverity(3)
 @treeQuery('((soql_query_body) @soql (#not-match? @soql "USER_MODE")) @target')
-export class ApexCRUDViolation extends ScanRule {}
+export class ApexCRUDViolation extends ApexScanRule {}

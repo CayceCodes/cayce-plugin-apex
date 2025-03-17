@@ -20,7 +20,7 @@ import ScanResultDigest from 'cayce-types/dist/scan-result-digest.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('(class_body(field_declaration) @1)')
-export class TooManyFields extends ScanRule {
+export class TooManyFields extends ApexScanRule {
     public validate(targetSource: string): ScanResultDigest[] {
         const results: ScanResultDigest[] = super.validate(targetSource);
         if(results.length > 20) {

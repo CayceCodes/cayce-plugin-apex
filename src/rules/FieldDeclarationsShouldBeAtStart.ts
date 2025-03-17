@@ -20,4 +20,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('(field_declaration) @field')
-export class FieldDeclarationsShouldBeAtStart extends ScanRule {}
+export class FieldDeclarationsShouldBeAtStart extends ApexScanRule {}

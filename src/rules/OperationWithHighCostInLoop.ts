@@ -21,4 +21,4 @@ import ApexScanRule from './ApexScanRule.js';
 @message('Avoid operations in loops that may impact performances')
 @ruleSeverity(3)
 @treeQuery('(parser_output)@p')
-export class OperationWithHighCostInLoop extends ScanRule {}
+export class OperationWithHighCostInLoop extends ApexScanRule {}

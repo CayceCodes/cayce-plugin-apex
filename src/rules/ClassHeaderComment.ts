@@ -18,4 +18,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(1)
 @treeQuery('(class_declaration) @class')
-export class ClassHeaderComment extends ScanRule {}
+export class ClassHeaderComment extends ApexScanRule {}

@@ -18,5 +18,5 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(1)
 @treeQuery('(parser_output)@p')
-export class UnusedLocalVariable extends ScanRule {
+export class UnusedLocalVariable extends ApexScanRule {
 }

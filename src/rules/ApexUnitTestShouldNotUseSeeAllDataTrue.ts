@@ -17,4 +17,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('((annotation) @anno (#match? @anno "seeAllData"))')
-export class ApexUnitTestShouldNotUseSeeAllDataTrue extends ScanRule {}
+export class ApexUnitTestShouldNotUseSeeAllDataTrue extends ApexScanRule {}

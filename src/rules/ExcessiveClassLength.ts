@@ -18,4 +18,4 @@ import ApexScanRule from './ApexScanRule.js';
 @message('Avoid really long classes.')
 @ruleSeverity(3)
 @treeQuery('(parser_output)@p')
-export class ExcessiveClassLength extends ScanRule {}
+export class ExcessiveClassLength extends ApexScanRule {}

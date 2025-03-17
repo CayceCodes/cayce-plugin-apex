@@ -11,4 +11,4 @@ import {  ScanResultDigest } from 'cayce-types';
 @suggestion('Even today, query/script injection is a real threat when exposing any sort of execution to the outside world. Apex has a queryWithBinds method that is a handy tool in mitigating this risk.')
 @ruleSeverity(3)
 @treeQuery('(method_invocation(identifier)@one(identifier)@two (#match? @one "Database") (#eq? @two "query"))@target')
-export class ApexSOQLInjection extends ScanRule {}
+export class ApexSOQLInjection extends ApexScanRule {}

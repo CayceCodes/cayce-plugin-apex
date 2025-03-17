@@ -23,4 +23,4 @@ import TsSfApex from 'tree-sitter-sfapex';
 @suggestion('Due to the sensitive nature of (x)Auth access to external systems (and the potentially sensitive data that they provide) use of named/external credentials for access is a must.')
 @ruleSeverity(3)
 @treeQuery('(class_body)')
-export class ApexSuggestUsingNamedCred extends ScanRule {}
+export class ApexSuggestUsingNamedCred extends ApexScanRule {}
