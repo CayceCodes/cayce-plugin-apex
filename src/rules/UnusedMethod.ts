@@ -20,4 +20,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('(method_declaration name: (identifier) @methodName)@target')
-export class UnusedMethod extends ScanRule {}
+export class UnusedMethod extends ApexScanRule {}

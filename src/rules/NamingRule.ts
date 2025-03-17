@@ -18,4 +18,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(1)
 @treeQuery('(parser_output)@p')
-export class NamingRule extends ScanRule {}
+export class NamingRule extends ApexScanRule {}

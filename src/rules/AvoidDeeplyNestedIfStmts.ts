@@ -17,4 +17,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('If statements that have too much "depth" can be confusing to follow for a maintainer. In most cases, these statements can be consolidated or refactored to have a flatter layout.')
 @ruleSeverity(3)
 @treeQuery('(if_statement consequence: (if_statement consequence:(if_statement)))@outer')
-export class AvoidDeeplyNestedIfStmts extends ScanRule {}
+export class AvoidDeeplyNestedIfStmts extends ApexScanRule {}

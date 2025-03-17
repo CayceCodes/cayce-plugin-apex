@@ -18,4 +18,4 @@ import ApexScanRule from './ApexScanRule.js';
 @message("Avoid using 'for' statements without curly braces")
 @ruleSeverity(3)
 @treeQuery('(for_statement)@for')
-export class ForLoopsMustUseBraces extends ScanRule {}
+export class ForLoopsMustUseBraces extends ApexScanRule {}

@@ -22,4 +22,4 @@ import ApexScanRule from './ApexScanRule.js';
 @treeQuery(
     '(method_invocation name: (identifier) @methodname (#match? @methodname "setEndpoint") (argument_list (string_literal) @literal (#match? @literal "http:")))@target'
 )
-export class ApexInsecureEndpoint extends ScanRule {}
+export class ApexInsecureEndpoint extends ApexScanRule {}

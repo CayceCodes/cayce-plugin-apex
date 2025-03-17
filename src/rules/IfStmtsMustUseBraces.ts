@@ -21,4 +21,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('(if_statement consequence:(block) @block (#match? @block "\\{*\\}"))')
-export class IfStmtsMustUseBraces extends ScanRule {}
+export class IfStmtsMustUseBraces extends ApexScanRule {}

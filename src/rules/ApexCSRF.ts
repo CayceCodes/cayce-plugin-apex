@@ -20,4 +20,4 @@ import ApexScanRule from './ApexScanRule.js';
 @treeQuery(
     '(constructor_body (expression_statement (dml_expression)@target))'
 )
-export class ApexCSRF extends ScanRule {}
+export class ApexCSRF extends ApexScanRule {}

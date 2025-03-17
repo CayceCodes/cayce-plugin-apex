@@ -20,4 +20,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('(formal_parameters) @param')
-export class ExcessiveParameterList extends ScanRule {}
+export class ExcessiveParameterList extends ApexScanRule {}

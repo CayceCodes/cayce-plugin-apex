@@ -20,4 +20,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('((soql_query_body) @soql (#match? @soql "WHERE|LIMIT"))')
-export class AvoidNonRestrictiveQueries extends ScanRule {}
+export class AvoidNonRestrictiveQueries extends ApexScanRule {}

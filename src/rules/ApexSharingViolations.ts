@@ -20,4 +20,4 @@ import ApexScanRule from './ApexScanRule.js';
 )
 @ruleSeverity(3)
 @treeQuery('(class_declaration(modifiers)@mod (#not-match? @mod "with sharing"))@target')
-export class ApexSharingViolations extends ScanRule {}
+export class ApexSharingViolations extends ApexScanRule {}

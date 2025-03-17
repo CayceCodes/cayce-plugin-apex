@@ -18,4 +18,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('(method_invocation object:(identifier) @object (#match? @object "DescribeSObjectResult"))@all')
-export class EagerlyLoadedDescribeSObjectResult extends ScanRule {}
+export class EagerlyLoadedDescribeSObjectResult extends ApexScanRule {}

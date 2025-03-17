@@ -18,4 +18,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('(while_statement (block) @block (#not-match? @block "\S"))')
-export class EmptyWhileStmt extends ScanRule {}
+export class EmptyWhileStmt extends ApexScanRule {}

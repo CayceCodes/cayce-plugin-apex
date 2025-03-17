@@ -18,4 +18,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('Although this is valid syntax, it can be unclear to the reader at first glance. Consider declaring each variable on a discreet line.')
 @ruleSeverity(1)
 @treeQuery('((variable_declarator) @one (variable_declarator) @two)')
-export class OneDeclarationPerLine extends ScanRule {}
+export class OneDeclarationPerLine extends ApexScanRule {}

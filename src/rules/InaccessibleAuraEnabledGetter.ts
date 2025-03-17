@@ -21,4 +21,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('(parser_output)@p')
-export class InaccessibleAuraEnabledGetter extends ScanRule {}
+export class InaccessibleAuraEnabledGetter extends ApexScanRule {}

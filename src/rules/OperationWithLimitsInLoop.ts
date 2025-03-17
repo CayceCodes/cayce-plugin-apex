@@ -21,4 +21,4 @@ import ApexScanRule from './ApexScanRule.js';
 @message('Avoid operations in loops that may hit governor limits')
 @ruleSeverity(3)
 @treeQuery('(parser_output)@p')
-export class OperationWithLimitsInLoop extends ScanRule {}
+export class OperationWithLimitsInLoop extends ApexScanRule {}

@@ -20,4 +20,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('(identifier)@name')
-export class MethodWithSameNameAsEnclosingClass extends ScanRule {}
+export class MethodWithSameNameAsEnclosingClass extends ApexScanRule {}
