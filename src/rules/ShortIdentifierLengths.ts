@@ -12,4 +12,4 @@ import ApexScanRule from './ApexScanRule.js';
 @ruleSeverity(3)
 @treeQuery('(variable_declarator name: (identifier)@var (#match? @var "^.{0,2}$"))' +
     '(formal_parameter name: (identifier)@param (#match? @param "^.{0,2}$"))')
-export class ShortIdentifierLengths extends ScanRule {}
+export class ShortIdentifierLengths extends ApexScanRule {}

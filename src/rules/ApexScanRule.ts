@@ -3,23 +3,25 @@ import { ScanRule } from 'cayce-types';
 import TsSfApex from 'tree-sitter-sfapex';
 import Parser, { Query, QueryCapture, QueryMatch } from 'tree-sitter';
 import ScanRuleProperties from 'cayce-types/dist/scan-rule-properties.js';
+import ScanResultDigest from 'cayce-types';
 
 export default class ApexScanRule extends ScanRule{
-    validate(targetSource: string, parser: Parser): Parser.SyntaxNode[] {
+    TreeSitterLanguage = TsSfApex.apex;
+    validate(targetSource: string, parser?: Parser): ScanResultDigest[] {
         this.TreeSitterLanguage = TsSfApex.apex;
         this.rawSource = targetSource;
         parser = new Parser();
-        parser.setLanguage(this.TreeSitterLanguage);
+        parser.setLanguage(TsSfApex.apex);
         const rootTree: Parser.Tree = parser.parse(this.rawSource);
         const queryInstance: Query = new Query(this.TreeSitterLanguage, this.TreeQuery);
-        const results: Parser.SyntaxNode[] = [];
+        const results: ScanResultDigest[] = [];
         let captures: QueryCapture[] = [];
 
         captures = queryInstance.captures(rootTree.rootNode);
 
 
         captures.forEach((capture) => {
-            results.push(capture.node);
+            results.push(this.buildScanResult(capture.node));
         });
         return results;
     }
