@@ -1,7 +1,6 @@
 import { id, ruleSeverity, category, context, message, name, treeQuery, suggestion} from 'cayce-types';
 import {ScanResultDigest} from 'cayce-types';
 import ApexScanRule from './ApexScanRule.js';
-import Parser from 'tree-sitter';
 import { CountFormalParametersSubRule } from './CountFormalParametersSubRule.js';
 import { CountVariableDeclaratorsSubRule } from './CountVariableDeclaratorsSubRule.js';
 
@@ -17,7 +16,7 @@ import { CountVariableDeclaratorsSubRule } from './CountVariableDeclaratorsSubRu
 @treeQuery('(variable_declarator name: (identifier)@var) (#match? @var "^.{3,2000}$")' +
     '(formal_parameter name: (identifier)@param (#match? @param "^.{3,2000}$"))@target')
 export class AllIdentifierLengths extends ApexScanRule {
-    validate(targetSource: string, parser?: Parser): ScanResultDigest[] {
+    validate(targetSource: string): ScanResultDigest[] {
         const formalParams: CountFormalParametersSubRule = new CountFormalParametersSubRule();
         const variableDeclarations: CountVariableDeclaratorsSubRule = new CountVariableDeclaratorsSubRule();
 

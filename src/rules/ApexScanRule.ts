@@ -21,10 +21,21 @@ export default class ApexScanRule extends ScanRule{
 
         captures.forEach((capture) => {
             if(!this.nodeHasScanDirective(capture.node,'SuppressWarnings', 2)){
-                results.push(this.buildScanResult(capture.node));
+                results.push(super.buildScanResult(capture.node));
             }
         });
         return results;
+    }
+
+    nodeHasScanDirective(baseNode: Parser.SyntaxNode, annotationName: string, argumentCount: number): boolean {
+        baseNode.descendantsOfType('annotation').forEach(annotationNode=>{
+            if(annotationNode.text === annotationName){
+                if(annotationNode.childForFieldName('annotation_argument_list')?.childCount === argumentCount){
+                    return true;
+                }
+            }
+        })
+        return false;
     }
 
 }
