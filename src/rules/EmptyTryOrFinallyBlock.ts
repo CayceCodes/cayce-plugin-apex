@@ -5,7 +5,7 @@ import { id,
     name,
     ruleSeverity,
     treeQuery,
-    ScanRule,
+
     suggestion,
 } from 'cayce-types';
 import ApexScanRule from './ApexScanRule.js';
@@ -17,5 +17,5 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @message('Avoid empty try or finally blocks')
 @ruleSeverity(3)
-@treeQuery('(try_statement (block)) (finally_clause (block)@target (#not-match? @target "\S"))')
+@treeQuery('(try_statement (block)) (finally_clause (block)@target (#not-match? @target "\\S"))')
 export class EmptyTryOrFinallyBlock extends ApexScanRule {}

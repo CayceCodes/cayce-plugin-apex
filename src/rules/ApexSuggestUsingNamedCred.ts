@@ -5,14 +5,9 @@ import { id,
     name,
     ruleSeverity,
     treeQuery,
-    ScanRule,
     suggestion,
 } from 'cayce-types';
 import ApexScanRule from './ApexScanRule.js';
-
-import Parser, * as TreeSitter from 'tree-sitter';
-import Query from 'tree-sitter';
-import TsSfApex from 'tree-sitter-sfapex';
 
 
 @id('ApexSuggestUsingNamedCred')

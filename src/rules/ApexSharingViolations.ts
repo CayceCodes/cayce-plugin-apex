@@ -1,5 +1,5 @@
 import { id,
-ScanRule,
+
     context,
     message,
     name,

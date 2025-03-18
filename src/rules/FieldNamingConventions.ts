@@ -7,10 +7,6 @@ import { id,
     treeQuery,
     suggestion,
 } from 'cayce-types';
-import ApexScanRule from './ApexScanRule.js';
-
-
-
 import { NamingRule } from './NamingRule.js';
 @id('FieldNamingConventions')
 @name('FieldNamingConventions')

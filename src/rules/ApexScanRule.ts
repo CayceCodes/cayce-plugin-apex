@@ -20,9 +20,12 @@ export default class ApexScanRule extends ScanRule{
 
 
         captures.forEach((capture) => {
-            results.push(this.buildScanResult(capture.node));
+            if(!this.nodeHasScanDirective(capture.node,'SuppressWarnings', 2)){
+                results.push(this.buildScanResult(capture.node));
+            }
         });
         return results;
     }
+
 }
 

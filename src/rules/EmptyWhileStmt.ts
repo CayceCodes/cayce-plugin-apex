@@ -5,7 +5,7 @@ import { id,
     name,
     ruleSeverity,
     treeQuery,
-    ScanRule,
+
     suggestion,
 } from 'cayce-types';
 import ApexScanRule from './ApexScanRule.js';
@@ -17,5 +17,5 @@ import ApexScanRule from './ApexScanRule.js';
 @message("Avoid empty 'while' statements")
 @suggestion('')
 @ruleSeverity(3)
-@treeQuery('(while_statement (block) @block (#not-match? @block "\S"))')
+@treeQuery('(while_statement (block) @block (#not-match? @block "\\S"))')
 export class EmptyWhileStmt extends ApexScanRule {}
