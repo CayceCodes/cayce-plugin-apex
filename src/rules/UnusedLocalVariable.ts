@@ -1,13 +1,4 @@
-import { id,
-    category,
-    context,
-    message,
-    name,
-    ruleSeverity,
-    treeQuery,
-
-    suggestion,
-} from 'cayce-types';
+import { id, category, context, message, name, ruleSeverity, treeQuery, suggestion } from 'cayce-types';
 import ApexScanRule from './ApexScanRule.js';
 
 @id('UnusedLocalVariable')
@@ -18,5 +9,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(1)
 @treeQuery('(parser_output)@p')
-export class UnusedLocalVariable extends ApexScanRule {
-}
+export class UnusedLocalVariable extends ApexScanRule {}

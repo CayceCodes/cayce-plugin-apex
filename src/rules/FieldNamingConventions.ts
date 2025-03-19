@@ -1,12 +1,4 @@
-import { id,
-    category,
-    context,
-    message,
-    name,
-    ruleSeverity,
-    treeQuery,
-    suggestion,
-} from 'cayce-types';
+import { id, category, context, message, name, ruleSeverity, treeQuery, suggestion } from 'cayce-types';
 import { NamingRule } from './NamingRule.js';
 @id('FieldNamingConventions')
 @name('FieldNamingConventions')
@@ -15,5 +7,7 @@ import { NamingRule } from './NamingRule.js';
 @suggestion('')
 @message("The {0} name ''{1}'' doesn''t match ''{2}''")
 @ruleSeverity(1)
-@treeQuery('(variable_declarator name:(identifier) @varname (#not-match? @varname "(VATEST?|[A-Z]{2,4})_[a-zA-Z0-9]*"))')
+@treeQuery(
+    '(variable_declarator name:(identifier) @varname (#not-match? @varname "(VATEST?|[A-Z]{2,4})_[a-zA-Z0-9]*"))'
+)
 export class FieldNamingConventions extends NamingRule {}

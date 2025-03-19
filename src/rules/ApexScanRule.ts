@@ -2,9 +2,9 @@ import { ScanRule } from 'cayce-types';
 
 import TsSfApex from 'tree-sitter-sfapex';
 import Parser, { Query, QueryCapture } from 'tree-sitter';
-import {ScanResultDigest} from 'cayce-types';
+import { ScanResultDigest } from 'cayce-types';
 
-export default class ApexScanRule extends ScanRule{
+export default class ApexScanRule extends ScanRule {
     TreeSitterLanguage = TsSfApex.apex;
     validate(targetSource: string, parser?: Parser): ScanResultDigest[] {
         this.TreeSitterLanguage = TsSfApex.apex;
@@ -18,9 +18,8 @@ export default class ApexScanRule extends ScanRule{
 
         captures = queryInstance.captures(rootTree.rootNode);
 
-
         captures.forEach((capture) => {
-            if(!this.nodeHasScanDirective(capture.node,'SuppressWarnings', 2)){
+            if (!this.nodeHasScanDirective(capture.node, 'SuppressWarnings', 2)) {
                 results.push(super.buildScanResult(capture.node));
             }
         });
@@ -28,15 +27,13 @@ export default class ApexScanRule extends ScanRule{
     }
 
     nodeHasScanDirective(baseNode: Parser.SyntaxNode, annotationName: string, argumentCount: number): boolean {
-        baseNode.descendantsOfType('annotation').forEach(annotationNode=>{
-            if(annotationNode.text === annotationName){
-                if(annotationNode.childForFieldName('annotation_argument_list')?.childCount === argumentCount){
+        baseNode.descendantsOfType('annotation').forEach((annotationNode) => {
+            if (annotationNode.text === annotationName) {
+                if (annotationNode.childForFieldName('annotation_argument_list')?.childCount === argumentCount) {
                     return true;
                 }
             }
-        })
+        });
         return false;
     }
-
 }
-

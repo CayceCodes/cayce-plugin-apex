@@ -1,13 +1,4 @@
-import { id,
-    category,
-    context,
-    message,
-    name,
-    ruleSeverity,
-    treeQuery,
-
-    suggestion,
-} from 'cayce-types';
+import { id, category, context, message, name, ruleSeverity, treeQuery, suggestion } from 'cayce-types';
 import ApexScanRule from './ApexScanRule.js';
 
 @id('ApexUnitTestMethodShouldHaveIsTestAnnotation')
@@ -17,4 +8,5 @@ import ApexScanRule from './ApexScanRule.js';
 @message('Apex test methods should have @isTest annotation.')
 @suggestion('')
 @ruleSeverity(3)
-@treeQuery('(modifiers(modifier(testMethod)@mod))')export class ApexUnitTestMethodShouldHaveIsTestAnnotation extends ApexScanRule {}
+@treeQuery('(modifiers(modifier(testMethod)@mod))')
+export class ApexUnitTestMethodShouldHaveIsTestAnnotation extends ApexScanRule {}

@@ -1,4 +1,4 @@
-import { id, ruleSeverity, category, context, message, name, treeQuery,  suggestion } from 'cayce-types';
+import { id, ruleSeverity, category, context, message, name, treeQuery, suggestion } from 'cayce-types';
 import ApexScanRule from './ApexScanRule.js';
 
 @id('CountFormalParametersSubRule')
@@ -9,4 +9,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('(formal_parameter name: (identifier) @target')
-export class CountFormalParametersSubRule extends ApexScanRule{}
+export class CountFormalParametersSubRule extends ApexScanRule {}

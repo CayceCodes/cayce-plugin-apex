@@ -1,14 +1,4 @@
-import { id,
-    category,
-    context,
-    message,
-    name,
-    ruleSeverity,
-    treeQuery,
-    suggestion,
-} from 'cayce-types';
-
-
+import { id, category, context, message, name, ruleSeverity, treeQuery, suggestion } from 'cayce-types';
 
 import { NamingRule } from './NamingRule.js';
 @id('FormalParameterNamingConventions')

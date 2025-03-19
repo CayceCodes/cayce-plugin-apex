@@ -1,13 +1,4 @@
-import { id,
-    category,
-    context,
-    message,
-    name,
-    ruleSeverity,
-    treeQuery,
-
-    suggestion,
-} from 'cayce-types';
+import { id, category, context, message, name, ruleSeverity, treeQuery, suggestion } from 'cayce-types';
 import ApexScanRule from './ApexScanRule.js';
 
 @id('EmptyWhileStmt')

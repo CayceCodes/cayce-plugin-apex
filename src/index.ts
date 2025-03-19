@@ -64,9 +64,7 @@ import TsSfApex from 'tree-sitter-sfapex';
 import { AllIdentifierLengths } from './rules/AllIdentifierLengths.js';
 
 export default class ApexPlugin extends CayceBasePlugin implements CaycePlugin {
-
-
-    getLanguage(): TreeSitter.Language{
+    getLanguage(): TreeSitter.Language {
         return TsSfApex.apex;
     }
 

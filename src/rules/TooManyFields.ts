@@ -1,13 +1,4 @@
-import { id,
-    category,
-    context,
-    message,
-    name,
-    treeQuery,
-    ruleSeverity,
-
-    suggestion
-} from 'cayce-types';
+import { id, category, context, message, name, treeQuery, ruleSeverity, suggestion } from 'cayce-types';
 import ApexScanRule from './ApexScanRule.js';
 import ScanResultDigest from 'cayce-types/dist/scan-result-digest.js';
 @id('TooManyFields')
@@ -21,10 +12,9 @@ import ScanResultDigest from 'cayce-types/dist/scan-result-digest.js';
 export class TooManyFields extends ApexScanRule {
     public validate(targetSource: string): ScanResultDigest[] {
         const results: ScanResultDigest[] = super.validate(targetSource);
-        if(results.length > 20) {
+        if (results.length > 20) {
             return results;
-        }
-        else{
+        } else {
             return [];
         }
     }

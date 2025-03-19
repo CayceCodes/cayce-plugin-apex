@@ -1,12 +1,4 @@
-import { id,
-    category,
-    context,
-    message,
-    name,
-    ruleSeverity,
-    treeQuery,
-    suggestion,
-} from 'cayce-types';
+import { id, category, context, message, name, ruleSeverity, treeQuery, suggestion } from 'cayce-types';
 import ApexScanRule from './ApexScanRule.js';
 
 @id('TrivialRule')
@@ -17,5 +9,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('You named something "Cookie." You monster.')
 @ruleSeverity(1)
 @treeQuery('(identifier) @target')
-export class TrivialRule extends ApexScanRule {
-}
+export class TrivialRule extends ApexScanRule {}
