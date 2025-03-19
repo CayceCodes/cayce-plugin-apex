@@ -5,7 +5,7 @@ import { id,
     name,
     ruleSeverity,
     treeQuery,
-    ScanRule,
+
     suggestion,
 } from 'cayce-types';
 import ApexScanRule from './ApexScanRule.js';
@@ -18,4 +18,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('(interfaces(type_list)@list)@interface')
-export class QueueableWithoutFinalizer extends  ScanRule {}
+export class QueueableWithoutFinalizer extends ApexScanRule {}

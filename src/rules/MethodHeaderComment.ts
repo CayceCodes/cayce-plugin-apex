@@ -4,7 +4,7 @@ import { id,
     message,
     name,
     ruleSeverity,
-    treeQuery,ScanRule,
+    treeQuery,
     suggestion
 } from 'cayce-types';
 import ApexScanRule from './ApexScanRule.js';
@@ -17,4 +17,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(1)
 @treeQuery('(method_declaration) @method')
-export class MethodHeaderComment extends  ScanRule {}
+export class MethodHeaderComment extends ApexScanRule {}

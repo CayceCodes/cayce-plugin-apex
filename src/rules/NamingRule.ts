@@ -5,8 +5,7 @@ import { id,
     name,
     ruleSeverity,
     treeQuery,
-    suggestion,
-    ScanRule
+    suggestion
 } from 'cayce-types';
 import ApexScanRule from './ApexScanRule.js';
 

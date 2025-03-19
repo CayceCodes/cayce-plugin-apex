@@ -1,4 +1,4 @@
-import { id, ruleSeverity, category, context, message, name, treeQuery, ScanRule, suggestion } from 'cayce-types';
+import { id, ruleSeverity, category, context, message, name, treeQuery,  suggestion } from 'cayce-types';
 import ApexScanRule from './ApexScanRule.js';
 
 

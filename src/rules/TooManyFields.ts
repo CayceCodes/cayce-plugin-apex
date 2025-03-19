@@ -5,12 +5,10 @@ import { id,
     name,
     treeQuery,
     ruleSeverity,
-    ScanRule,
+
     suggestion
 } from 'cayce-types';
 import ApexScanRule from './ApexScanRule.js';
-
-import Parser from 'tree-sitter';
 import ScanResultDigest from 'cayce-types/dist/scan-result-digest.js';
 @id('TooManyFields')
 @name('TooManyFields')

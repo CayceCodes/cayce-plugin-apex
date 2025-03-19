@@ -1,4 +1,4 @@
-import { id,    ScanRule,
+import { id,
     context,
     message,
     name,
@@ -17,4 +17,4 @@ import ApexScanRule from './ApexScanRule.js';
 @suggestion('')
 @ruleSeverity(3)
 @treeQuery('(method_invocation) @method')
-export class AvoidDebugStatements extends  ScanRule {}
+export class AvoidDebugStatements extends ApexScanRule {}

@@ -5,13 +5,11 @@ import { id,
     name,
     ruleSeverity,
     treeQuery,
-    ScanRule,
+
     suggestion,
 } from 'cayce-types';
 import ApexScanRule from './ApexScanRule.js';
 
-
-import Parser, { Query, QueryCapture } from 'tree-sitter';
 
 @id('ApexDangerousMethods')
 @name('ApexDangerousMethods')

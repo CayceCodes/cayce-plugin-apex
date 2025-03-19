@@ -1,4 +1,4 @@
-import { id,    ScanRule,
+import { id,
     context,
     message,
     name,
