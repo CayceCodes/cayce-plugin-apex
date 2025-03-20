@@ -8,5 +8,5 @@ import ApexScanRule from './ApexScanRule.js';
 @message('All variable identifiers')
 @suggestion('')
 @ruleSeverity(3)
-@treeQuery('(variable_declarator name: (identifier) @target')
+@treeQuery('(variable_declarator name: (identifier)) @target')
 export class CountVariableDeclaratorsSubRule extends ApexScanRule {}

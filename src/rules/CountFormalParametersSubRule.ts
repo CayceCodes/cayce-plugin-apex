@@ -8,5 +8,5 @@ import ApexScanRule from './ApexScanRule.js';
 @message('All proper-length identifiers')
 @suggestion('')
 @ruleSeverity(3)
-@treeQuery('(formal_parameter name: (identifier) @target')
+@treeQuery('(formal_parameter name: (identifier))@target')
 export class CountFormalParametersSubRule extends ApexScanRule {}
