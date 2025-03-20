@@ -5,7 +5,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rimraf dist && tsc",
+    "update-rules": "cd scripts && npx tsc --module nodenext update-rules-imports.ts && node update-rules-imports.js",
+    "build": "npm run update-rules && rimraf dist && tsc",
     "test": "node --experimental-vm-modules --loader ts-node/esm node_modules/jest/bin/jest.js ",
     "test:watch": "jest --watch",
     "lint": "eslint src",

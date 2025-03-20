@@ -62,10 +62,15 @@ import { WhileLoopsMustUseBraces } from './rules/WhileLoopsMustUseBraces.js';
 import TreeSitter from 'tree-sitter';
 import TsSfApex from 'tree-sitter-sfapex';
 import { AllIdentifierLengths } from './rules/AllIdentifierLengths.js';
+import { CountFormalParametersSubRule } from './rules/CountFormalParametersSubRule.js';
+import { CountVariableDeclaratorsSubRule } from './rules/CountVariableDeclaratorsSubRule.js';
+import { ShortIdentifierLengths } from './rules/ShortIdentifierLengths.js';
+import { TrivialRule } from './rules/TrivialRule.js';
 
 export default class ApexPlugin extends CayceBasePlugin implements CaycePlugin {
+
     getLanguage(): TreeSitter.Language {
-        return TsSfApex.apex;
+            return TsSfApex.apex;
     }
 
     registerRules() {
@@ -131,6 +136,10 @@ export default class ApexPlugin extends CayceBasePlugin implements CaycePlugin {
             new UnusedLocalVariable(),
             new UnusedMethod(),
             new WhileLoopsMustUseBraces(),
+            new CountFormalParametersSubRule(),
+            new CountVariableDeclaratorsSubRule(),
+            new ShortIdentifierLengths(),
+            new TrivialRule(),
         ];
     }
 }
