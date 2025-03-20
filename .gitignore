@@ -24,3 +24,4 @@ files.ts
 /src/test-harness.ts
 /test/*
 /src/rules/list.md
+cayce-plugin-apex.code-workspace

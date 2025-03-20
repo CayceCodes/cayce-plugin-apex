@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "Tokyo Night Light",
+		"editor.fontFamily": "Lilex Nerd Font"
+	}
+}
