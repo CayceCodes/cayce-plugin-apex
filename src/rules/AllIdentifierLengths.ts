@@ -13,7 +13,7 @@ import { CountVariableDeclaratorsSubRule } from './CountVariableDeclaratorsSubRu
 @ruleSeverity(3)
 @treeQuery(
     '(variable_declarator name: (identifier)@var (#match? @var "^.{3,2000}$"))\n' +
-    '(formal_parameter name: (identifier)@param (#match? @param "^.{3,2000}$"))@target'
+        '(formal_parameter name: (identifier)@param (#match? @param "^.{3,2000}$"))@target'
 )
 export class AllIdentifierLengths extends ApexScanRule {
     validate(targetSource: string): ScanResultDigest[] {

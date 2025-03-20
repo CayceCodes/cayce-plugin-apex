@@ -68,9 +68,8 @@ import { ShortIdentifierLengths } from './rules/ShortIdentifierLengths.js';
 import { TrivialRule } from './rules/TrivialRule.js';
 
 export default class ApexPlugin extends CayceBasePlugin implements CaycePlugin {
-
     getLanguage(): TreeSitter.Language {
-            return TsSfApex.apex;
+        return TsSfApex.apex;
     }
 
     registerRules() {
