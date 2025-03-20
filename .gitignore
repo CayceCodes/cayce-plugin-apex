@@ -25,3 +25,4 @@ files.ts
 /test/*
 /src/rules/list.md
 .idea/
+.idea/AugmentWebviewStateStore.xml
